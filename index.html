@@ -54,20 +54,6 @@
             color: #4a4a4a;
         }
 
-        .btn-primary {
-            background-color: #0d6efd;
-            border: none;
-            padding: 10px 20px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-
-        .btn-primary:hover {
-            background-color: #0b5ed7;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
-        }
-
         .dropdown-toggle {
             width: 100%;
             text-align: left;
@@ -105,6 +91,14 @@
         .dropdown-item i {
             margin-right: 10px;
         }
+
+        #goalsSection {
+            display: none;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+        }
     </style>
 </head>
 
@@ -129,12 +123,31 @@
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <li><a class="dropdown-item" href="https://datamule.xyz" target="_blank"><i
                                     class="fas fa-rocket"></i> DataMule (Startup)</a></li>
+
                         <li><a class="dropdown-item" href="https://sites.google.com/view/johnfriedman/home"
                                 target="_blank"><i class="fas fa-globe"></i> Old Website</a></li>
 
+                        <li><a class="dropdown-item" href="#" onclick="toggleGoals(); return false;"><i
+                                    class="fas fa-bullseye"></i> Goals</a></li>
                     </ul>
                 </div>
             </div>
+        </div>
+
+        <div id="goalsSection">
+            <h2>My Goals</h2>
+            <h3>Summer '24</h3>
+            <ul>
+                <li>Cure chronic hand pain <i class="fas fa-check"></i></li>
+                <li>Recover from Mono <i class="fas fa-check"></i></li>
+                <li>Build something cool <i class="fas fa-check"></i></li>
+            </ul>
+            <h3>Fall '24</h3>
+            <ul>
+                <li>Fix ankle injury</li>
+                <li>Learn to relax, and get better sleep</li>
+                <li>Make something useful</li>
+            </ul>
         </div>
 
         <hr class="my-4">
@@ -148,6 +161,16 @@
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleGoals() {
+            var goalsSection = document.getElementById('goalsSection');
+            if (goalsSection.style.display === 'none' || goalsSection.style.display === '') {
+                goalsSection.style.display = 'block';
+            } else {
+                goalsSection.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 
 </html>
