@@ -4,41 +4,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Pages Website</title>
+    <title>John Friedman - Profile</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
+            background-color: #f0f2f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
-        h1 {
-            color: #2c3e50;
+        .profile-container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+        }
+
+        .profile-picture {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border: 6px solid #fff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-links a {
+            color: #495057;
+            font-size: 1.8rem;
+            margin: 0 15px;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #0d6efd;
+            transform: translateY(-3px);
+        }
+
+        h1,
+        h2 {
+            font-weight: 700;
+            color: #1a1a1a;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #4a4a4a;
+        }
+
+        .btn-primary {
+            background-color: #0d6efd;
+            border: none;
+            padding: 10px 20px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #0b5ed7;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
+        }
+
+        .dropdown-toggle {
+            width: 100%;
+            text-align: left;
+            background-color: #e9ecef;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-weight: 600;
+            color: #495057;
+            transition: all 0.3s ease;
+        }
+
+        .dropdown-toggle:hover {
+            background-color: #dee2e6;
+        }
+
+        .dropdown-toggle::after {
+            float: right;
+            margin-top: 10px;
+        }
+
+        .dropdown-menu {
+            width: 100%;
+        }
+
+        .dropdown-item {
+            padding: 10px 20px;
+            transition: all 0.3s ease;
+        }
+
+        .dropdown-item:hover {
+            background-color: #e9ecef;
+        }
+
+        .dropdown-item i {
+            margin-right: 10px;
         }
     </style>
 </head>
 
 <body>
-    <header>
-        <h1>Welcome to My GitHub Pages Website</h1>
-    </header>
-    <main>
-        <p>This is a simple website hosted on GitHub Pages. You can modify this content to add your own information,
-            projects, or anything else you'd like to share.</p>
-        <p>Here are some ideas for what you can include:</p>
-        <ul>
-            <li>An "About Me" section</li>
-            <li>Links to your projects or repositories</li>
-            <li>A blog or articles you've written</li>
-            <li>Your contact information or social media links</li>
-        </ul>
-    </main>
-    <footer>
-        <p>&copy; 2024 Your Name. Hosted on GitHub Pages.</p>
-    </footer>
+    <div class="container profile-container">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center mb-4 mb-md-0">
+                <img src="src/john.jpg" alt="John Friedman" class="rounded-circle profile-picture img-fluid">
+            </div>
+            <div class="col-md-8">
+                <h1 class="mb-3">John Friedman</h1>
+                <p class="mb-4">
+                    Hi, I'm John. I'm currently working on a startup to make using SEC data as easy as using Cloudflare.
+                    Before that, I was a PhD student in economics at UCLA. I've also worked as a researcher at MIT and
+                    UC Berkeley.
+                </p>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        My Projects
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="https://datamule.xyz" target="_blank"><i
+                                    class="fas fa-rocket"></i> DataMule (Startup)</a></li>
+                        <li><a class="dropdown-item" href="https://sites.google.com/view/johnfriedman/home"
+                                target="_blank"><i class="fas fa-globe"></i> Old Website</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-4">
+        <div class="social-links text-center">
+            <a href="https://github.com/john-friedman" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/john-friedman-econ/" target="_blank" title="LinkedIn"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/johngfriedman" target="_blank" title="Twitter"><i
+                    class="fab fa-twitter"></i></a>
+            <a href="mailto:jgfriedman99@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
