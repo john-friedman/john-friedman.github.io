@@ -42,8 +42,7 @@
             transform: translateY(-3px);
         }
 
-        h1,
-        h2 {
+        h1 {
             font-weight: 700;
             color: #1a1a1a;
         }
@@ -70,51 +69,18 @@
             color: #0d6efd;
             border-bottom-color: #0d6efd;
         }
-
-        .dropdown-toggle {
-            width: 100%;
-            text-align: left;
-            background-color: #e9ecef;
-            border: none;
-            border-radius: 5px;
-            margin-top: 20px;
-            font-weight: 600;
-            color: #495057;
-            transition: all 0.3s ease;
+        
+        /* Clean, simple link styling */
+        .clean-link {
+            color: #0d6efd;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom-color 0.2s ease;
         }
-
-        .dropdown-toggle:hover {
-            background-color: #dee2e6;
-        }
-
-        .dropdown-toggle::after {
-            float: right;
-            margin-top: 10px;
-        }
-
-        .dropdown-menu {
-            width: 100%;
-        }
-
-        .dropdown-item {
-            padding: 10px 20px;
-            transition: all 0.3s ease;
-        }
-
-        .dropdown-item:hover {
-            background-color: #e9ecef;
-        }
-
-        .dropdown-item i {
-            margin-right: 10px;
-        }
-
-        #goalsSection {
-            display: none;
-            background-color: #f8f9fa;
-            border-radius: 10px;
-            padding: 20px;
-            margin-top: 20px;
+        
+        .clean-link:hover {
+            border-bottom-color: #0d6efd;
         }
     </style>
 </head>
@@ -128,52 +94,16 @@
             <div class="col-md-8">
                 <h1 class="mb-3">John Friedman</h1>
                 <p class="mb-2">
-                    Hi, I'm John. I'm currently working on a startup to make using SEC data as easy as using Cloudflare.
-                    Before that, I was a PhD student in economics at UCLA. I've also worked as a researcher at MIT and
-                    UC Berkeley.
+                    Hi, I'm John. I'd like to understand the world better. Previously, I was a PhD student in economics at UCLA & before that
+I was a researcher at MIT & Berkeley.
                 </p>
+                <p>Currently working on <a href='https://datamule.xyz' class="clean-link">datamule</a>.</p>
                 <p class="fun-fact">
                     Fun Fact: My Erdős number is 4, and <a
                         href="https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2020.00266/full"
                         target="_blank">I've coauthored with a Nobel Prize winner.</a>
                 </p>
-                <div class="dropdown">
-                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        My Projects
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item" href="https://datamule.xyz" target="_blank"><i
-                                    class="fas fa-rocket"></i> DataMule (Startup)</a></li>
-                        <li><a class="dropdown-item" href="https://sites.google.com/view/johnfriedman/home"
-                                target="_blank"><i class="fas fa-globe"></i> Old Website</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="toggleGoals(); return false;"><i
-                                    class="fas fa-bullseye"></i> Goals</a></li>
-                    </ul>
-                </div>
             </div>
-        </div>
-
-        <div id="goalsSection">
-            <h2>My Goals</h2>
-            <h3>Summer '24</h3>
-            <ul>
-                <li>Cure chronic hand pain <i class="fas fa-check"></i></li>
-                <li>Recover from Mono <i class="fas fa-check"></i></li>
-                <li>Build something cool <i class="fas fa-check"></i></li>
-            </ul>
-            <h3>Fall '24</h3>
-            <ul>
-                <li>Fix ankle injury<i class="fas fa-check"></i></li>
-                <li>Learn to relax, and get better sleep<i class="fas fa-check"></i></li>
-                <li>Make something useful<i class="fas fa-check"></i></li>
-            </ul>
-            <h3>Winter '25</h3>
-            <ul>
-                <li>Cook more</li>
-                <li>Fix bruxism and improve workout consistency</li>
-                <li>Make something widely used</li>
-            </ul>
         </div>
 
         <hr class="my-4">
@@ -181,22 +111,10 @@
             <a href="https://github.com/john-friedman" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/johngfriedman/" target="_blank" title="LinkedIn"><i
                     class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com/johngfriedman" target="_blank" title="Twitter"><i
-                    class="fab fa-twitter"></i></a>
             <a href="mailto:jgfriedman99@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <script>
-        function toggleGoals() {
-            var goalsSection = document.getElementById('goalsSection');
-            if (goalsSection.style.display === 'none' || goalsSection.style.display === '') {
-                goalsSection.style.display = 'block';
-            } else {
-                goalsSection.style.display = 'none';
-            }
-        }
-    </script>
 </body>
 
 </html>
