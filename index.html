@@ -69,7 +69,7 @@
             color: #0d6efd;
             border-bottom-color: #0d6efd;
         }
-        
+
         /* Clean, simple link styling */
         .clean-link {
             color: #0d6efd;
@@ -78,7 +78,7 @@
             border-bottom: 1px solid transparent;
             transition: border-bottom-color 0.2s ease;
         }
-        
+
         .clean-link:hover {
             border-bottom-color: #0d6efd;
         }
@@ -94,8 +94,9 @@
             <div class="col-md-8">
                 <h1 class="mb-3">John Friedman</h1>
                 <p class="mb-2">
-                    Hi, I'm John. I'd like to understand the world better. Previously, I was a PhD student in economics at UCLA & before that
-I was a researcher at MIT & Berkeley.
+                    Hi, I'm John. I'd like to understand the world better. Previously, I was a PhD student in economics
+                    at UCLA & before that
+                    I was a researcher at MIT & Berkeley.
                 </p>
                 <p>Currently working on <a href='https://datamule.xyz' class="clean-link">datamule</a>.</p>
                 <p class="fun-fact">
@@ -105,7 +106,106 @@ I was a researcher at MIT & Berkeley.
                 </p>
             </div>
         </div>
+        <div class="mb-4">
+            <div class="accordion" id="experienceAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingExperience">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExperience" aria-expanded="false"
+                            aria-controls="collapseExperience">
+                            Past Projects
+                        </button>
+                    </h2>
+                    <div id="collapseExperience" class="accordion-collapse collapse" aria-labelledby="headingExperience"
+                        data-bs-parent="#experienceAccordion">
+                        <div class="accordion-body">
 
+                            <h6 class="fw-bold mb-2">Affiliations</h6>
+                            <ul class="mb-3">
+                                <li>UCLA</li>
+                                <li>MIT</li>
+                                <li>Berkeley</li>
+                                <li>ODF23</li>
+                                <li>Rapid Reviews: COVID 19</li>
+                                <li>COVID-19 Policy Alliance</li>
+                            </ul>
+
+                            <h6 class="fw-bold mb-2">Selected Open Source</h6>
+                            <ul class="mb-3">
+                                <li>Developer of the datamule project</li>
+                                <li>Developer of doc2dict</li>
+                                <li>Developer of the Structured Output Organization</li>
+                            </ul>
+
+                            <h6 class="fw-bold mb-2">Selected Policy</h6>
+                            <ul class="mb-3">
+                                <li>Worked on the Puerto Rican Debt Crisis (Simon Johnson)</li>
+                                <li>Wrote the English guidebook to the Korean CDC's Covid-19 Playbook (Simon Johnson)
+                                </li>
+                                <li>Worked on Jump-Starting America (Simon Johnson)</li>
+                                <li>Worked on the Massachusetts Covid-19 response (Simon Johnson)</li>
+                                <li>Participated in the Covid-19 Policy Hackathon with a paper on using machine learning
+                                    to optimize radio education</li>
+                            </ul>
+
+                            <h6 class="fw-bold mb-2">Selected Papers (RA)</h6>
+                            <ul class="mb-3">
+                                <li><strong>Strengthening State Capacity (AER)</strong>
+                                    <ul class="mt-1">
+                                        <li>Used classical machine learning and regex to clean and link extremely messy
+                                            civil servant name and job strings with US census data</li>
+                                        <li>Wrote custom PyQT Gui to aid in manually validating unclear matches</li>
+                                        <li>Wrote a geocoding package in R that used Wikipedia for better accuracy with
+                                            historical names</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Ideology and Performance in Public Organizations (Econometrica)</strong>
+                                    <ul class="mt-1">
+                                        <li>Scraped 5tb of federal contract data from 1997 to 2022</li>
+                                        <li>Flattened the xml structure into tabular using lxml with memory
+                                            optimizations</li>
+                                    </ul>
+                                </li>
+                                <li><strong>The Costs of Employment Segregation (QJE)</strong>
+                                    <ul class="mt-1">
+                                        <li>Used fuzzy matching and regex techniques to link 700,000 messy job title
+                                            strings extracted from federal records to the US Census</li>
+                                        <li>Results surpassed the Census Linking Project, the academic gold standard, in
+                                            accuracy and percent linked</li>
+                                    </ul>
+                                </li>
+                                <li><strong>A Glimpse of Freedom: Political Resistance in East Germany (AEJ)</strong>
+                                    <ul class="mt-1">
+                                        <li>Made some complex graphics. Really fun to mess around with ggplot2</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Bureaucratic Representation and State Responsiveness (Review of Economics &
+                                        Statistics)</strong>
+                                    <ul class="mt-1">
+                                        <li>Used Google Cloud Vision to convert 100,000 British Blue Book scan tables
+                                            into text format</li>
+                                        <li>Played around with Google's beta table OCR parsing tool</li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <h6 class="fw-bold mb-2">Selected Papers</h6>
+                            <ul class="mb-3">
+                                <li>Transitioning Out of the Coronavirus Lockdown: A Framework for Evaluating Zone-Based
+                                    Social Distancing</li>
+                            </ul>
+
+                            <h6 class="fw-bold mb-2">Misc</h6>
+                            <ul class="mb-0">
+                                <li>Wrote a rshiny app "Bridge" that used the World Bank API to compare past living
+                                    standards to the present</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <hr class="my-4">
         <div class="social-links text-center">
             <a href="https://github.com/john-friedman" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
